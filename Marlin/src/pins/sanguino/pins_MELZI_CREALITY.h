@@ -72,7 +72,7 @@
   #undef BEEPER_PIN
 #elif ENABLED(FILAMENT_RUNOUT_SENSOR)
   #ifndef FIL_RUNOUT_PIN
-    #define FIL_RUNOUT_PIN                   27
+    #define FIL_RUNOUT_PIN                   29
   #endif
   #if FIL_RUNOUT_PIN == BEEPER_PIN
     #undef BEEPER_PIN
