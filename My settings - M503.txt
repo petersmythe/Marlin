@@ -17,19 +17,20 @@ Recv: echo:  M205 B20000.00 S0.00 T0.00 J0.08
 Recv: echo:; Home offset:
 Recv: echo:  M206 X0.00 Y0.00 Z0.00
 Recv: echo:; Mesh Bed Leveling:
-Recv: echo:  M420 S0 Z0.00
+Recv: echo:  M420 S1 Z0.00
 Recv: echo:  G29 S3 I0 J0 Z-0.02500
-Recv: echo:  G29 S3 I1 J0 Z-0.12500
-Recv: echo:  G29 S3 I2 J0 Z-0.15000
+Recv: echo:  G29 S3 I1 J0 Z-0.07500
+Recv: echo:  G29 S3 I2 J0 Z0.02500
 Recv: echo:  G29 S3 I0 J1 Z0.07500
-Recv: echo:  G29 S3 I1 J1 Z-0.07500
-Recv: echo:  G29 S3 I2 J1 Z-0.07500
-Recv: echo:  G29 S3 I0 J2 Z0.02500
-Recv: echo:  G29 S3 I1 J2 Z-0.02500
-Recv: echo:  G29 S3 I2 J2 Z0.10000
+Recv: echo:  G29 S3 I1 J1 Z-0.05000
+Recv: echo:  G29 S3 I2 J1 Z0.02500
+Recv: echo:  G29 S3 I0 J2 Z-0.05000
+Recv: echo:  G29 S3 I1 J2 Z-0.05000
+Recv: echo:  G29 S3 I2 J2 Z0.30000
 Recv: echo:  G29 S4 Z0.00000
 Recv: echo:; Material heatup parameters:
 Recv: echo:  M145 S0 H200 B60 F255
 Recv: echo:  M145 S1 H240 B70 F255
 Recv: echo:; PID settings:
 Recv: echo:  M301 P21.73 I1.54 D76.55
+Recv: ok
