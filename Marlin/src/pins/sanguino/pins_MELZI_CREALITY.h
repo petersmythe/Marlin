@@ -56,13 +56,13 @@
 #if ENABLED(BLTOUCH)
   #define SERVO0_PIN 27
   #undef BEEPER_PIN
-#endif
-
-// Alter timing for graphical display
-#if HAS_GRAPHICAL_LCD
-  #define BOARD_ST7920_DELAY_1 DELAY_NS(125)
-  #define BOARD_ST7920_DELAY_2 DELAY_NS(125)
-  #define BOARD_ST7920_DELAY_3 DELAY_NS(125)
+#elif ENABLED(FILAMENT_RUNOUT_SENSOR)
+  #ifndef FIL_RUNOUT_PIN
+    #define FIL_RUNOUT_PIN                   29
+  #endif
+  #if FIL_RUNOUT_PIN == BEEPER_PIN
+    #undef BEEPER_PIN
+  #endif
 #endif
 
 #if ENABLED(MINIPANEL)
