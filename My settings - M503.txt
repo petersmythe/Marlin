@@ -34,3 +34,20 @@ Recv: echo:  M145 S1 H240 B70 F255
 Recv: echo:; PID settings:
 Recv: echo:  M301 P21.73 I1.54 D76.55
 Recv: ok
+
+
+
+Steps per unit:
+Recv: echo: M92 X80.00 Y80.00 Z400.00 E103.86  <- maybe repeat under no load.
+Flow = 80%   !!!!!!!!!!  Maybe not
+Recv: PID Autotune finished! Put the last Kp, Ki and Kd constants from below into Configuration.h
+Recv: #define DEFAULT_Kp 25.36
+Recv: #define DEFAULT_Ki 2.01
+Recv: #define DEFAULT_Kd 79.99
+
+
+X = 20.00
+Y = 20.15
+Z = 20.30
+ Y & Z need calibrating
+ 
