@@ -1,0 +1,49 @@
+Send: M503
+Recv: echo:  G21    ; Units in mm (mm)
+Recv: echo:  M149 C ; Units in Celsius
+Recv: 
+Recv: echo:; Filament settings: Disabled
+Recv: echo:  M200 S0 D1.75
+Recv: echo:; Steps per unit:
+Recv: echo: M92 X80.00 Y80.00 Z400.00 E96.72
+Recv: echo:; Maximum feedrates (units/s):
+Recv: echo:  M203 X500.00 Y500.00 Z5.00 E25.00
+Recv: echo:; Maximum Acceleration (units/s2):
+Recv: echo:  M201 X500.00 Y500.00 Z100.00 E5000.00
+Recv: echo:; Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+Recv: echo:  M204 P500.00 R500.00 T500.00
+Recv: echo:; Advanced: B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> J<junc_dev>
+Recv: echo:  M205 B20000.00 S0.00 T0.00 J0.08
+Recv: echo:; Home offset:
+Recv: echo:  M206 X0.00 Y0.00 Z0.00
+Recv: echo:; Mesh Bed Leveling:
+Recv: echo:  M420 S1 Z0.00
+Recv: echo:  G29 S3 I0 J0 Z-0.02500
+Recv: echo:  G29 S3 I1 J0 Z-0.07500
+Recv: echo:  G29 S3 I2 J0 Z0.02500
+Recv: echo:  G29 S3 I0 J1 Z0.07500
+Recv: echo:  G29 S3 I1 J1 Z-0.05000
+Recv: echo:  G29 S3 I2 J1 Z0.02500
+Recv: echo:  G29 S3 I0 J2 Z-0.05000
+Recv: echo:  G29 S3 I1 J2 Z-0.05000
+Recv: echo:  G29 S3 I2 J2 Z0.30000
+Recv: echo:  G29 S4 Z0.00000
+Recv: echo:; Material heatup parameters:
+Recv: echo:  M145 S0 H200 B60 F255
+Recv: echo:  M145 S1 H240 B70 F255
+Recv: echo:; PID settings:
+Recv: echo:  M301 P21.73 I1.54 D76.55
+Recv: ok
+
+Flow = 80%
+Recv: PID Autotune finished! Put the last Kp, Ki and Kd constants from below into Configuration.h
+Recv: #define DEFAULT_Kp 25.36
+Recv: #define DEFAULT_Ki 2.01
+Recv: #define DEFAULT_Kd 79.99
+
+
+X = 20.00
+Y = 20.15
+Z = 20.30
+ Y & Z need calibrating
+ 
